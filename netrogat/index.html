@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир Чая</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <a href="index.html">Виды чая</a>
+            <a href="123.html"> Дорогие виды чая</a>
+        </nav>
+        <button class="theme-toggle" onclick="toggleDarkMode()">Темная тема</button>
+    </header>
+   
+    <section class="hero">
+        <h1>Добро пожаловать в Мир Чая!</h1>
+      
+    </section>
+
+    <section class="tea-types">
+        <div class="tea">
+            <img src="images/Black-Tea.jpg" alt="Чёрный чай" onclick="openModal(this.src)">
+            <h3>Чёрный чай</h3>
+            <p>Классический вкус и насыщенный аромат, идеально для утреннего бодрящего напитка.</p>
+            <button onclick="showDetails('Черный чай — это чай, который полностью ферментирован, что придает ему насыщенный вкус и темный цвет. В процессе ферментации листья чая подвергаются окислению, что также помогает выделять более сильный вкус. Черный чай содержит кофеин, что делает его хорошим выбором для утреннего или дневного употребления. Он также полезен для улучшения пищеварения и укрепления иммунной системы.')">Подробнее</button>
+        </div>
+        <div class="tea">
+            <img src="images/zelen.jpg" alt="Зелёный чай" onclick="openModal(this.src)">
+            <h3>Зелёный чай</h3>
+            <p>Освежающий и полезный, богат антиоксидантами для вашего здоровья.</p>
+            <button onclick="showDetails('Зеленый чай не подвергается ферментации, что позволяет сохранить его натуральный вкус и аромат. Листья обрабатываются минимально, что помогает сохранить полезные вещества, такие как антиоксиданты (катехины). Зеленый чай известен своими полезными свойствами для сердца, а также для поддержания нормального уровня сахара в крови. Он может стимулировать метаболизм и помогать в снижении веса.')">Подробнее</button>
+        </div>
+        <div class="tea">
+            <img src="images/Рис-4-Улун.jpg" alt="Улун" onclick="openModal(this.src)">
+            <h3>Улун</h3>
+            <p>Полуферментированный чай с уникальным вкусом, соединяющим лучшие черты чёрного и зелёного чая.</p>
+            <button onclick="showDetails('Улун — это частично ферментированный чай, который занимает промежуточное положение между зеленым и черным чаем. Его процесс обработки включает частичное окисление, что придает ему особый вкус, сочетая свежесть зеленого чая и насыщенность черного. Улун известен своим цветочным ароматом и может содержать полезные вещества для здоровья, включая антиоксиданты и компоненты, способствующие снижению уровня холестерина.')">Подробнее</button>
+        </div>
+        <div class="tea">
+            <img src="images/trava.jpg" alt="Травяной чай" onclick="openModal(this.src)">
+            <h3>Травяной чай</h3>
+            <p>Натуральные травяные смеси для расслабления и укрепления здоровья.</p>
+            <button onclick="showDetails('Травяной чай на самом деле не является настоящим чаем, так как в его состав входят травы, цветы, специи или фрукты, а не листья чайного дерева. Примеры травяных чаев включают ромашковый, мятный, имбирный и другие. Травяные чаи могут иметь различные полезные свойства в зависимости от состава, например, ромашка помогает расслабиться, а мята – улучшить пищеварение.')">Подробнее</button>
+        </div>
+    </section>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+    <div id="whatsapp-block" class="whatsapp-block">
+        <a href="https://web.whatsapp.com/?phone=77070456439" target="_blank">
+            <button class="whatsapp-button"><i class="fab fa-whatsapp"></i></button>
+        </a> 
+    </div>
+</div>
+
+<footer>
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/you.png" alt="YouTube" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/insta.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://web.telegram.org" target="_blank">
+                <img src="images/tg.png" alt="Telegram" class="social-icon">
+            </a>
+        </div>
+    </div>
+    
+   
+
+        <p>&copy; 2024 Мир Чая.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

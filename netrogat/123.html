@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самые дорогие виды чая</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <a href="index.html">Виды чая</a>
+            <a href="123.html"> Дорогие виды чая</a>
+        </nav>
+        <button class="theme-toggle" onclick="toggleDarkMode()">Темная тема</button>
+    </header>
+
+    <section class="hero">
+        <h1>Дорогие виды чая</h1>
+        
+    </section>
+
+    <section class="tea-types">
+        <div class="tea">
+            <img src="images/teatrading_da_hong_pao.jpg" alt="Дарджилинг (Darjeeling)" onclick="openModal(this.src)">
+            <h3>Дарджилинг (Darjeeling)</h3>
+            <p>Этот чай из индийского региона Дарджилинг, особенно из первого сбора (First Flush), славится своими тонкими цветочными нотами и светлым, ароматным вкусом. </p>
+            <button onclick="showDetails('Цена: от 500 до 1 000 долларов США за килограмм.Чай из Дарджилинга считается премиальным, особенно чай первого сбора. В редких случаях цена может быть еще выше для определенных эксклюзивных партий')">Подробнее</button>
+        </div>
+        <div class="tea">
+            <img src="images/gyekuro-dragotsennaya-kaplya.jpg" alt="Джапанский чай Gyokuro" onclick="openModal(this.src)">
+            <h3>Джапанский чай Gyokuro</h3>
+            <p>Гёкуро — это японский зеленый чай высшего качества, который выращивается в тени, что придает ему сладкий и насыщенный вкус с высоким уровнем аминокислот. </p>
+            <button onclick="showDetails(' Цена: от 1 000 до 1 500 долларов США за килограмм.Это один из самых дорогих зеленых чаев, выращиваемых в Японии, который требует специального ухода и внимательного сбора.')">Подробнее</button>
+        </div>
+        <div class="tea">
+            <img src="images/neveroyatnaya_polza_puera.jpg" alt="Пуэр" onclick="openModal(this.src)">
+            <h3>Пуэр</h3>
+            <p>Пуэр из китайской провинции Юньнань — это ферментированный чай, который со временем приобретает ещё более глубокий вкус и ценность. Некоторые виды пуэра могут стоить десятки тысяч долларов.</p>
+            <button onclick="showDetails(' Цена: от 500 до 10 000 долларов США за килограмм, в зависимости от возраста и качества.Чай Пуэр может быть значительно дороже, если он старый и имеет определенную ценность для коллекционеров. Некоторые из старых чаев могут стоить десятки тысяч долларов.')">Подробнее</button>
+        </div>
+        <div class="tea">
+            <img src="images/teatrading_da_hong_pao.jpg" alt="Белый чай Да Хун Пао " onclick="openModal(this.src)">
+            <h3>Белый чай Да Хун Пао </h3>
+            <p>Да Хун Пао (Da Hong Pao)
+                Да Хун Пао — это китайский улун, выращиваемый в горном регионе Вuyi. Этот чай славится своим глубоким вкусом с нотами жареных орехов и карамели. Он является одним из самых дорогих чаев в мире, особенно если речь идет о листьях, собранных с древних чайных деревьев, возраст которых может превышать несколько сотен лет. </p>
+            <button onclick="showDetails(' Цена: от 1 000 до 10 000 долларов США за килограмм.Некоторые из самых редких видов этого чая могут стоить гораздо дороже, в зависимости от возраста и происхождения. Например, определенные старинные сорта этого чая могут стоить до 1 миллиона долларов за килограмм. ')">Подробнее</button>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/you.png" alt="YouTube" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/insta.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://web.telegram.org" target="_blank">
+                <img src="images/tg.png" alt="Telegram" class="social-icon">
+            </a>
+        </div>
+    </div>
+    
+   
+
+        <p>&copy; 2024 Мир Чая.</p>
+    </footer>
+
+   
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modalImage" class="modal-content" src="">
+        <div id="modalText" class="modal-text"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
